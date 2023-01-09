@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'Airstrike';
+    src: url(fonts/airstrike/airstrike.ttf);
+}
+@font-face {
+    font-family: "Raleway";
+    src: url(fonts/Raleway-VariableFont_wght.ttf);
+}
+
+/* Default style for larger screens */
+.section-header {
+    background-color: transparent;
+  }
+  
+  /* Style for smaller screens */
+  @media (max-width: 767px) {
+    .section-header {
+      background-color: #333;
+    }
+  }
+  
+
+.navbar-toggle {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.navbar-toggle.open {
+  max-height: 500px; /* Set this to the height of your navbar content */
+}
+
+#services {}
+#services .services-top {
+    padding: 70px 0 50px;
+}
+#services .services-list {
+    padding-top: 50px;
+}
+.services-list .service-block {
+    margin-bottom: 25px;
+}
+.services-list .service-block .ico {
+    font-size: 38px;
+    float: left;
+}
+.services-list .service-block .text-block {
+    margin-left: 58px;
+}
+.services-list .service-block .text-block .name {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.services-list .service-block .text-block .info {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.services-list .service-block .text-block .text {
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 300;
+}
+.highlight {
+    color: #2ac5ed;
+    font-weight:bold;
+}                    
+
+.logo
+{
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+   -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor:pointer;
+}
+
+
+.logo:hover
+{
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+
+.section-header h3 {
+    font-size: 36px;
+    color: #283d50;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+}
+
+.section-header p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #556877;
+    width: 50%;
+}
+
+#clients {
+    padding: 60px 0;
+    
+}
+#clients .clients-wrap {
+    border-top: 1px solid #d6eaff;
+    border-left: 1px solid #d6eaff;
+    margin-bottom: 30px;
+}
+
+#clients .client-logo {
+    padding: 64px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-right: 1px solid #d6eaff;
+    border-bottom: 1px solid #d6eaff;
+    overflow: hidden;
+    background: #fff;
+    height: 160px;
+}
+
+#clients img {
+    transition: all 0.4s ease-in-out;
+}
+ 
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+  }
+  
+  .social-link:hover,
+  .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+  }
+  .map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link::after{
+    content: "";
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: #798cd9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.nav-link:hover::after{
+    opacity: 1;
+}
+
+.image{
+    margin-left: 3.4rem;
+}
+
+.nav-mar{
+    margin-right: 4rem;
+}
+
+header {
+	position: absolute;
+	z-index: 10;
+	width: 100vw;
+}
+.bg-light {
+	background-color: transparent !important;
+}
+.navbar-brand {
+	font-size: 2rem;
+	font-weight: 800;
+	text-transform: uppercase;
+    font-family: 'Airstrike';
+}
+
+.nav-item {
+	font-weight: 500;
+	text-transform: uppercase;
+    margin: 1rem;
+}
+
+.nav-item .nav-link:hover {
+	color: #798cd9 !important;
+    transform: scale(1.15);
+}
+
+.active {
+	color: #798cd9 !important;
+    transform: scale(1.15);
+}
+.hero {
+	position: relative;
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+    background-image: linear-gradient(to bottom, #4c00823b, #00008034),
+    url(https://images.unsplash.com/photo-1629131726692-1accd0c53ce0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);;
+}
+
+.hero h1 {
+	font-size: 80px;
+	font-weight: 1000;
+	margin: 0;
+	padding: 0;
+    color: #461468;
+    font-family: "Raleway";
+}
+.hero p {
+	padding: 0;
+	margin: 1em 0 0 0;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: justify;
+    color: #fff;
+    font-family: "Raleway";
+}
